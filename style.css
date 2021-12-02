@@ -36,14 +36,14 @@ body {
 
 .banner {
     background-color: #f6f5da;
-    padding: 20px 0;
     position: relative;
     overflow: hidden;
 }
 
 .banner_shape {
     display: block;
-    height: 100%;
+    height: auto;
+    max-width: 50%;
     position: absolute;
     top: 0;
     left: 0;
@@ -60,8 +60,9 @@ body {
 }
 
 .banner_descript {
-    width: 100%;
+    width: 50%;
     max-width: 600px;
+    padding: 20px 0;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -85,7 +86,7 @@ body {
 
 /*-- /Banner --*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
 
     /*-- Banner --*/
 
@@ -96,8 +97,23 @@ body {
     }
 
     .banner_descript {
+        width: 100%;
         max-width: 100%;
+        padding-top: 20px;
     }
+
+    .banner_descript h2 {
+        padding: 10px 0;
+        font-size: 70px;
+    }
+
+    /*-- /Banner --*/
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    /*-- Banner --*/
 
     .banner_descript h2 {
         padding: 10px 0;
