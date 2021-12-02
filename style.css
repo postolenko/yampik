@@ -17,10 +17,22 @@ html {
 }
 
 body {
-    background: #fff;
+    background-color: #f6f5da;
 }
 
 /*-- Banner --*/
+
+.banner_wrapp {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    min-height: 100vh;
+}
+
+.banner_wrapp > div {
+    width: 100%;
+}
 
 .banner {
     background-color: #f6f5da;
@@ -78,7 +90,13 @@ body {
     /*-- Banner --*/
 
     .banner_shape {
-        opacity: .5;
+        height: auto;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .banner_descript {
+        max-width: 100%;
     }
 
     .banner_descript h2 {
